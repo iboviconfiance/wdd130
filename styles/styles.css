@@ -3,7 +3,7 @@ nav{
     padding: 10px;
 }
 
-a{
+nav a{
     color: blue;
     display: inline-block;
     padding: 5px;
