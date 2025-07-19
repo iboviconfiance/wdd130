@@ -3,11 +3,12 @@ nav{
     padding: 10px;
 }
 
-nav a{
-    color: blue;
-    display: inline-block;
+nav a {
+    color: black;
     padding: 10px;
+    display: inline-block;
 }
+
 
 h1{
     color: cornflowerblue;
@@ -24,19 +25,20 @@ aside{
     text-align: center;
 }
 
+img{
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    box-shadow: 5px 5px 5px 5px #333;
+}
+
 aside img{
     width: 200px;
     height: auto;
 }
 main{
     max-width: 100%;
-}
-img{
-    width: 200px;
-    height: 200px;
-    padding: 2px;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    box-shadow: 5px 5px 5px 5px #333;
 }
 
 p{
