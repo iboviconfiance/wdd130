@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #1b2a41;   /* bleu nuit */
+  --secondary-color: #3a506b; /* bleu fumé */
+  --accent1-color: #5bc0be;   /* bleu sarcelle clair */
+  --accent2-color: #ede6e3;   /* blanc cassé */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: white;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent1-color);
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: white;
+  font-size: 2rem;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  max-width: 300px;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  margin: 16px;
+  padding: 8px;
+  background-color: var(--accent2-color);
+  border-left: 5px solid var(--secondary-color);
+}
+
+section img {
+  width: 160px;
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  height: 32px;
+  width: 32px;
+}
+
+@media (max-width: 860px) {
+  header, main, footer {
+    width: 95%;
+  }
+
+  .hero article {
+    position: static;
+    margin: 1rem auto;
+    display: block;
+    float: none;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  section img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
