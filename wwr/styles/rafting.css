@@ -16,7 +16,6 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: white;
   line-height: 1.6;
 }
 
@@ -213,7 +212,6 @@ footer p {
   }
 
   section img {
-    width: 100%;
     max-width: 100%;
   }
 }
